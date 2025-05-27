@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://kit.fontawesome.com/4b4d66f7f6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar-1">
+        <div class="logo">
+            <img src="../images/main-logo.png" alt="">
+        </div>
+        <div class="profile">
+            <p>Vasanth</p>
+            <img src="../images/man.png" alt="">
+        </div>
+    </div>
+
+    <div class="mobileviewnav">
+        <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/main-logo.png" alt="" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/main-logo.png" alt="" width="80px"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a href="../index.html"><img src="../images/home.png" alt=""></a>
+                    <a href="../index.html">Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html"><img src="../images/quiz.png" alt=""></a>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../notes/notes.html"><img src="../images/notes.png" alt=""></a>
+                    <a href="../notes/notes.html">Notes</a>
+                </li>
+                <li class="nav-item">
+                   <a href="../notification/notification.html"><img src="../images/message.png" alt=""></a>
+                    <a href="../notification/notification.html">Notification</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="../doubts/doubts.html"><img src="../images/doubt.png" alt=""></a>
+                    <a href="../doubts/doubts.html">Doubt</a>
+                </li>
+                <li class="nav-item">
+                    <a href=""><img src="../images/logout.png" alt=""></a>
+                    <a href="">Logout</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+
+
+
+    <div class="parent">
+        <div class="sidebar">
+            <div class="side-btns">
+                <div class="side-btn">
+                    <a href="../index.html"><img src="../images/home.png" alt=""></a>
+                    <a href="../index.html">Home</a>
+                </div>
+
+                <div class="side-btn act">
+                    <a href="quiz.html"><img src="../images/quiz.png" alt=""></a>
+                    <a href="quiz.html">Quiz</a>
+                </div>
+
+                <div class="side-btn">
+                    <a href="../notes/notes.html"><img src="../images/notes.png" alt=""></a>
+                    <a href="../notes/notes.html">Notes</a>
+                </div>
+
+                <div class="side-btn">
+                    <a href="../notification/notification.html"><img src="../images/message.png" alt=""></a>
+                    <a href="../notification/notification.html">Notification</a>
+                </div>
+
+                <div class="side-btn">
+                    <a href="../doubts/doubts.html"><img src="../images/doubt.png" alt=""></a>
+                    <a href="../doubts/doubts.html">Doubt</a>
+                </div>
+
+                <div class="side-btn">
+                    <a href=""><img src="../images/logout.png" alt=""></a>
+                    <a href="">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="child">
+
+            <div class="navi-2">
+
+                <div class="texts">
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-globe"></i>
+                        <p onclick="course()" id="all-btn">All</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-brain"></i>
+                        <p onclick="gk()" id="gk-btn">GK</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-school"></i>
+                        <p onclick="preschool()" id="preschool-btn">Pre-school</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <p onclick="upstars()" id="schoolup-btn">Upstars</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-shapes"></i>
+                        <p onclick="skillbased()" id="skillbase-btn">Skill Base</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <p onclick="pickuped()" id="pickup-btn">Pickup Learn</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-wrench"></i>
+                        <p onclick="gamersed()" id="gamers-btn">Fixers</p>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-language"></i>
+                        <p onclick="rocketed()" id="rocket-btn">Languages</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sub-child" id="for-all">
+                <p id="qui">Quiz</p>
+
+
+                <div class="child-1" id="for-gk">
+                    <p class="geokids">CHECK YOUR GK PART</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                        <img src="../images/us-flag.png" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/poonai.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/panda.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/giraffes.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/winter.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/winter.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallcard">
+                        <img src="../images/winter.jpg" alt="">
+                        <div class="quizs">
+                            <div class="detail">
+                                <p class="letter">QUIZ</p>
+                                <p class="letters">QUIZ: U.S.Presidents</p>
+                            </div>
+                            <div class="start">
+                                <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <div class="child-2" id="for-preschool">
+                    <p class="geokids">PRESCHOOL PLAYERS</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/seahorse.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/royalty.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/us-states.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+
+                <div class="child-3" id="for-schoolup">
+                    <p class="geokids">SCHOOL UP</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/desert.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/rocksandmineals.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/cheetah.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/flamingo.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/pangolin.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+                <div class="child-4" id="for-skillbase">
+                    <p class="geokids">SKILL BASE</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/asteroids.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/caves.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/goinggreen.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/ilai.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/cats.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/marsupial.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/marsupial.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/marsupial.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/marsupial.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/marsupial.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="child-5" id="for-pickup">
+                    <p class="geokids">PICKUP LEARN</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/mars.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/superfun.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/greatapes.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/underdog.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/comets.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="child-6" id="for-game">
+                    <p class="geokids">GAME FIXERS</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/bulb.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/weirdnature.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/awesome.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="child-7" id="for-languagerocket">
+                    <p class="geokids">LANGUAGE ROCKET</p>
+                    <div class="smallcards">
+                        <div class="smallcard">
+                            <img src="../images/bulb.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/weirdnature.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/awesome.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallcard">
+                            <img src="../images/awesome.jpg" alt="">
+                            <div class="quizs">
+                                <div class="detail">
+                                    <p class="letter">QUIZ</p>
+                                    <p class="letters">QUIZ: U.S.Presidents</p>
+                                </div>
+                                <div class="start">
+                                    <button class="start-bn" onclick="window.location.href='subquiz.html'">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+
+<script>
+    var generalknow = document.getElementById("for-gk");
+    var prschool = document.getElementById("for-preschool");
+    var schoolup = document.getElementById("for-schoolup");
+    var skillbase = document.getElementById("for-skillbase");
+    var pickup = document.getElementById("for-pickup");
+    var gamerace = document.getElementById("for-game");
+    var rocket = document.getElementById("for-languagerocket");
+
+
+    var all_btn = document.getElementById("all-btn");
+    var gk_btn = document.getElementById("gk-btn");
+    var preschool_btn = document.getElementById("preschool-btn");
+    var schoolup_btn = document.getElementById("schoolup-btn");
+    var skillbase_btn = document.getElementById("skillbase-btn");
+    var pickup_btn = document.getElementById("pickup-btn");
+    var gamers_btn = document.getElementById("gamers-btn");
+    var rocket_btn = document.getElementById("rocket-btn");
+
+
+    function course(){
+        generalknow.style.display = "block";
+        prschool.style.display = "block";
+        schoolup.style.display = "block";
+        skillbase.style.display = "block";
+        pickup.style.display = "block";
+        gamerace.style.display = "block";
+        rocket.style.display = "block";
+        all_btn.style.borderBottom = "3px solid #f39c12";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+
+    }
+
+    function gk(){
+        generalknow.style.display = "block";
+        prschool.style.display = "none";
+        schoolup.style.display = "none";
+        skillbase.style.display = "none";
+        pickup.style.display = "none";
+        gamerace.style.display = "none";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "3px solid #f39c12";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function preschool(){
+        generalknow.style.display = "none";
+        prschool.style.display = "block";
+        schoolup.style.display = "none";
+        skillbase.style.display = "none";
+        pickup.style.display = "none";
+        gamerace.style.display = "none";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "3px solid #f39c12";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function upstars(){
+        generalknow.style.display = "none";
+        prschool.style.display = "none";
+        schoolup.style.display = "block";
+        skillbase.style.display = "none";
+        pickup.style.display = "none";
+        gamerace.style.display = "none";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "3px solid #f39c12";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function skillbased(){
+        generalknow.style.display = "none";
+        prschool.style.display = "none";
+        schoolup.style.display = "none";
+        skillbase.style.display = "block";
+        pickup.style.display = "none";
+        gamerace.style.display = "none";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "3px solid #f39c12";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function pickuped(){
+        generalknow.style.display = "none";
+        prschool.style.display = "none";
+        schoolup.style.display = "none";
+        skillbase.style.display = "none";
+        pickup.style.display = "block";
+        gamerace.style.display = "none";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "3px solid #f39c12";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function gamersed(){
+        generalknow.style.display = "none";
+        prschool.style.display = "none";
+        schoolup.style.display = "none";
+        skillbase.style.display = "none";
+        pickup.style.display = "none";
+        gamerace.style.display = "block";
+        rocket.style.display = "none";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "3px solid #f39c12";
+        rocket_btn.style.borderBottom = "unset";
+    }
+
+    function rocketed(){
+        generalknow.style.display = "none";
+        prschool.style.display = "none";
+        schoolup.style.display = "none";
+        skillbase.style.display = "none";
+        pickup.style.display = "none";
+        gamerace.style.display = "none";
+        rocket.style.display = "block";
+        all_btn.style.borderBottom = "unset";
+        gk_btn.style.borderBottom = "unset";
+        preschool_btn.style.borderBottom = "unset";
+        schoolup_btn.style.borderBottom = "unset";
+        skillbase_btn.style.borderBottom = "unset";
+        pickup_btn.style.borderBottom = "unset";
+        gamers_btn.style.borderBottom = "unset";
+        rocket_btn.style.borderBottom = "3px solid #f39c12";
+    }
+</script>
+
+
+</body>
+</html>
